@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="styleproduct.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="gallery">
+                <img src="images product page/image1.png" alt="product 1" id="productImg">
+                <div class="controls">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+            </div>
+            <div class="details">
+                <h1>Casual T-Shirt</h1>
+                <h2>Rp. 150.000</h2>
+                <h3>10% Discount</h3>
+                <p>Experience ultimate comfort with our 100% cotton t-shirt. Featuring a regular fit, crew neck, and short sleeves, it’s perfect for any casual occasion. Available in multiple colors and sizes!. Elevate your everyday style effortlessly!</p>
+                <form>
+                    <div class="size-select">
+                        <p>Sizes</p>
+                        <label for="small">
+                            <input type="radio" name="size" id="small">
+                            <span>S</span>
+                        </label>
+                        <label for="medium">
+                            <input type="radio" name="size" id="medium">
+                            <span>M</span>
+                        </label>
+                        <label for="large">
+                            <input type="radio" name="size" id="large">
+                            <span>L</span>
+                        </label>
+                        <label for="extra-large">
+                            <input type="radio" name="size" id="extra-large">
+                            <span>XL</span>
+                        </label>
+                    </div>
+
+                    <div class="color">
+                        <p>Colors</p>
+                        <label for="lightblue">
+                            <input type="radio" name="color" id="lightblue" data-image="images product page/image4.png">
+                            <span class="color-1"></span>
+                        </label>
+                        <label for="black">
+                            <input type="radio" name="color" id="black"data-image="images product page/image5.png">
+                            <span class="color-2"></span>
+                        </label>
+                        <label for="gray">
+                            <input type="radio" name="color" id="gray" data-image="images product page/image6.png">
+                            <span class="color-3"></span>
+                        </label>
+                        <label for="white">
+                            <input type="radio" name="color" id="white" data-image="images product page/image1.png">
+                            <span class="color-4"></span>
+                        </label>
+                    </div>
+
+                    <div class="quantity">
+                        <p>Quantity</p>
+                        <input type="number" name="quantity" id="quantityinput" value="1" min="1">
+                        <p id="stockinfo"></p>
+                    </div>
+                    <button>Buy Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="scriptproduct.js"></script></script>
+</body>
+</html>
